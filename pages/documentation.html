@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Unity Workflow Toolkit • Documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation</title>
+  <link rel="icon" href="../logo.png">
+  <link rel="stylesheet" href="documentation.css">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loaderFunction()">
+
+  <div id="loader">
+    <div class="loading">
+      <span></span>
+    </div>
+  </div>
+
+
+  <div id="page">
+    <nav>
+      <div class="logo noselect">
+        <img class="noselect" src="../logo.png"> UWT • Documentation
+      </div>
+
+      <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu noselect">
+        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a class="active" href="#"><i class="far fa-list-alt"></i> Documentation</a></li>
+        <li><a href="../resources.html"><i class="fas fa-burn"></i> Resources</a></li>
+        <li><a href="https://assetstore.unity.com/" target="_none"><i class="fas fa-headset"></i> Purchase </a></li>
+        <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
+      </ul>
+    </nav>
+
+    <div class="container clear noselect">
+      <div class="row wrapper">
+
+        <span class="collapse" onclick="closeSidePanel()"><i class="fas fa-caret-left"></i></span>
+        <span class="expand" onclick="openSidePanel()"><i class="fas fa-caret-right"></i></span>
+
+        <div class="sidepanel">
+          <div class="divider left"></div>
+
+          <a class="title" href="#introduction">Introduction</a>
+
+          <a class="section" href="#aboutthetoolkit">About this Toolkit</a>
+          <a class="section" href="#technology">Technology</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#gettingstarted">Getting Started</a>
+
+          <a class="section" href="#inenginehelp">In-Engine Help</a>
+          <a class="section" href="#addingthetoolkit">Adding the Tools</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#commands">Tools</a>
+
+          <a class="section" href="#automation">Automation</a>
+          <a class="section" href="#optimisation">Optimisation</a>
+          <a class="section" href="#miscellaneous">Miscellaneous</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#bugs">Bugs</a>
+          <a class="section" href="#severity">Severity</a>
+          <a class="section" href="#current">Active Bugs</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#releasenotes">Release Notes</a>
+          <a class="section" href="#fourboxkey">Key</a>
+          <a class="section" href="#versions">versions</a>
+
+          <div class="space double"></div>
+
+        </div>
+
+        <div class="right-col">
+          <h1 id="introduction">Introduction</h1>
+
+          <p id="aboutthisbot">Unity Workflow Toolkit is a set of Plugins / Tools for Unity. This project focuses on
+            delivering QOL (Quality Of Life) Features, making it easier for developers to create and manage their
+            projects</p>
+
+          <h2>About Workflow Toolkit</h2>
+
+          <p id="technology">The Tools have a focus on improving Quality Of Life inside of the Unity Engine, it lets you
+            squeeze a bit more out of time by automating boring and/or repetitive tasks</p>
+
+          <h2>Technology</h2>
+
+          <p id="gettingstarted">This toolkit mainly uses in-built Unity libaries, making it support a range of
+            different versions and projects</p>
+
+          <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+          <h1>Getting Started</h1>
+
+          <p id="inenginehelp">This toolkit has been designed to be as easy to install and get started as possible, once
+            purchased from the Unity Asset Store (or Itch.io) Import the .unitypackage file, and get started.</p>
+
+          <h1>In-Engine help</h1>
+
+          <p>There is a "Help" Section inside of the toolkit, please refer to that, or this documentation if
+            necessary.<br></p>
+
+          <p id="addingthetoolkit"><b>Important:</b> Some tools use filepaths, it is extremely unlikely that the tools
+            might delete the wrong file/folders, so please use tempoary ones <br> Use <span
+              class="codeBlock">Help</span> Window for more information.</p>
+
+
+          <h2>Adding the Tools</h2>
+
+          <p id="commands">Purchased from the<span class="codeBlock">Unity Asset Store</span>:
+            <br><br>To download the Workflow Toolkit from the Unity Asset Store:
+          <ul>
+            <li>Open the Unity Editor.</li>
+            <li>Go to the "Asset Store" tab or visit the Unity Asset Store website.</li>
+            <li>Search for "Unity Workflow Toolkit" in the search bar.</li>
+            <li>Click "Purchase" or "Download" if you've already purchased it.</li>
+            <li>Once the package is purchased, click the "Open in Unity" button, which will import the toolkit directly
+              into your project.</li>
+            <li>After the package is imported, you can access it from your "Project" tab in Unity.</li>
+          </ul>
+          </p>
+
+          <p id="commands">Purchased from <span class="codeBlock">Itch.io</span>:
+            <br><br>To download the Workflow Toolkit from Itch.io:
+          <ul>
+            <li>Visit the Itch.io website and log into your account.</li>
+            <li>Search for "Unity Workflow Toolkit" in the search bar.</li>
+            <li>Click "Purchase" or "Download" if you've already purchased it.</li>
+            <li>Once purchased, download the package to your local machine.</li>
+            <li>Unzip the downloaded file (if necessary) and manually import it into your Unity project by going to
+              "Assets > Import Package > Custom Package" in Unity.</li>
+            <li>Browse to the location of the downloaded file, select it, and click "Open" to import the package.</li>
+          </ul>
+          </p>
+
+
+
+          <div id="#automation" class="divider" style="width:24%; margin:30px 0;"></div>
+
+
+          <h1>Tools</h1>
+          <div>Syntax:
+            <ul>
+              <li><span class="codeBlock"><></span> : Required Argument</li>
+              <li><span class="codeBlock">[ ]</span> : Optional Argument</li>
+              <li id="#automation"><span class="codeBlock">( )</span> : Button</li>
+              <li> <span class="codeBlock">...</span> : More than 1 are allowed</li>
+            </ul>
+          </div>
+
+
+
+          <h2>Extra Information</h2>
+          <ul>
+            <li>Some Tools delete files</li>
+            <div> Tools such as <span class="codeBlock">Post Build Automation</span> & <span class="codeBlock">Unused
+                Asset Remover</span> delete files. PLEASE BE CAREFUL! YOU CAN'T GET THESE BACK.</div>
+            <div>
+              <h2>Automation Tools</h2>
+              <div>
+                <ul>
+                  <li class="collapsible">Post Build Actions</li>
+                  <div class="cmdCollapse">
+                    Description : This tool helps automate post-build actions, such as copying files and zipping the
+                    build to make it easier to share/upload
+                    <br>
+                    Usage : <span class="codeBlock">
+                      < build-path>
+                        < export-path>
+                          < development-stage>
+                            < timestamp-format>
+                              < filename-order>
+                                < compression-amount> [ add-bonus-files ]... [destination-folder-name]... [file-path]
+                                  (build-game)
+                    </span>
+                    <br>
+                    Example : <span class="codeBlock">
+                      < game/builds>
+                        < downloads/test>
+                          < beta>
+                            < yyyy-mm-dd>
+                              < GameName [Stage] (Version) Timestamp>
+                                < fast> [ ✓ ]... [Songs]... [downloads/01 Celestrial Prelude.mp3] (build-game)
+                    </span>
+                    <br>
+                    Note : ⚠️ using this tool will delete the build directories' contents after exporting, as a
+                    precaution.
+                  </div>
+
+                  <li class="collapsible">Script Counter</li>
+                  <div class="cmdCollapse">
+                    Description : This tool counts various assets like scripts, audio files, models, and prefabs in a
+                    selected folder.
+                    <br>
+                    Usage : <span class="codeBlock">
+                      < file-extension>
+                        < searching-directory>
+                          < display-script-names>
+                            < sort-alphabetically>
+                              < include-hidden-files>
+                                < show-file-sizes> (count-button) (copy-to-clipboard)
+                    </span>
+                    <br>
+                    Example : <span class="codeBlock">
+                      < cs>
+                        < assets/scripts>
+                          < true>
+                            < true>
+                              < false>
+                                < true> (count-button) (copy-to-clipboard)
+                    </span>
+                    <br>
+                    Note : 📝 this tool does not write, but goes through directories, it is set at <span
+                      class="codeBlock">Game Name/Assets</span> as default, it currently fully supports 25+ extensions,
+                    but supports all other extensions
+                  </div>
+
+
+                  <div id="optimisation"></div>
+
+                  <h2>Optimisation Tools</h2>
+
+                  <li class="collapsible">N/A</li>
+                  <div class="cmdCollapse">
+                    Description : N/A
+                    <br>
+                    Usage : <span class="codeBlock">N/A</span>
+                    <br>
+                    Example : <span class="codeBlock">N/A</span>
+                    <br>
+                    Note : N/A
+                  </div>
+
+                  <div id="miscellaneous"></div>
+
+                  <h2>Miscellaneous Tools</h2>
+
+                  <li class="collapsible">Notes</li>
+                  <div class="cmdCollapse"> Description : Allows you to jot down some notes when coding, and have the option to save them.
+                    <br> Usage : <span class="codeBlock">[ save-notes ] [auto-save] [save-type] [file-type] <export-path> (new-note)... < note-name>< note-contents> (remove-note) (export-note(s)) </span>
+                    <br> Example : <span class="codeBlock">[ true ] [ true ] [ auto ] [txt] < downloads/test>(new-note)... < Annoying Issue>< current issue at x, y & z> (remove-note) (export-note(s)) </span>
+                    <br>Note : ✍️ This tool allows you to export your notes, they will have the date & time, note name and the note contents if you choose to.
+                  </div>
+
+                  <li class="collapsible">Fancy Screenshots</li>
+                  <div class="cmdCollapse"> Description : Lets you take customised screenshots of your game, inside the engine
+                    <br> Usage : <span class="codeBlock">[ export-path ] [naming-type] < border> < border-colour></span>
+                    <br> Example : <span class="codeBlock">[ downloads/test ] [ animals ] < true> < #00aeff> Annoying Issue></span>
+                    <br>Note : 📸 Take screenshots of your game engine while being customisable.
+                  </div>
+
+                  <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+                  <h1 id="bugs">Known Bugs</h1>
+
+                  <p id="severity"></p>
+                  <div class="severity-legend">
+                    <h2>Severity Levels:</h2>
+                    <ul>
+                      <li><span class="codeBlock">🟥 Critical Severity</span>: Major bugs that heavily impact
+                        functionality</li>
+                      <li><span class="codeBlock">🟧 High Severity</span>: Bugs that cause major issues but have
+                        workarounds</li>
+                      <li><span class="codeBlock">🟨 Medium Severity</span>: Minor bugs that do not significantly impact
+                        user experience</li>
+                      <li><span class="codeBlock">🟩 Low Severity</span>: Cosmetic issues or minor inconveniences</li>
+                    </ul>
+                  </div>
+
+
+                  <p id="current"></p>
+                  <div class="bugs-list">
+                    <h2>Current Bugs:</h2>
+                    <ul>
+                      <li><strong>🟩 Script Counter:</strong> UI bug where the "total scripts" count doesn't
+                        updatecorrectly. When using .ogg files, it still displays "total scripts" instead of "total
+                        audio files."</li>
+                      <li><strong>🟧 Post Build Actions:</strong> sometimes gets stuck when zipping file</li>
+                      </li>
+                    </ul>
+                  </div>
+
+                </ul>
+                <div class="doublespace"></div>
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+              </div>
+
+              <div id="releasenotes" class="releasenotes">
+                <h1>Release Notes</h1>
+
+                <p id="fourboxkey"></p>
+                <div class="fourboxkey-colours">
+                  <h2>Key:</h2>
+                  <ul>
+                    <li><span class="codeBlock">🟥 Removed</span> This has been removed from the tool</li>
+                    <li><span class="codeBlock">🟩 Addition</span>: Feature has been added</li>
+                    <li><span class="codeBlock">🟧 Bug Fix</span>: Fixed the bug </li>
+                    <li><span class="codeBlock">🟦 Rework</span>: Feature has been reworked</li>
+                  </ul>
+                </div>
+                <h2>Versions</h2>
+                <div>
+                  <ul>
+                    <p id="versions"></p>
+                    <li class="collapsible">v 0.1.0 (Initial Version) </li>
+                    <div class="cmdCollapse">Description: Core Features added for the initial release. date 01/10/24<br>
+                      <span class="codeBlock">🟩 Addition</span>Script Counter Tool with basic functionality<br>
+                      Note:
+                    </div>
+
+                    <li class="collapsible">v 0.2.0 </li>
+                    <div class="cmdCollapse">Description: Second tool added, and some minor reworks. date 03/10/24<br>
+                      <span class="codeBlock">🟩 Addition</span>Post Build Actions Tool added for automating tasks after building the project<br>
+                      <span class="codeBlock">🟩 Addition</span>File Naming configurations<br>
+                      <span class="codeBlock">🟩 Addition</span>File Attachment handling post-build<br>
+                      <span class="codeBlock">🟧 Bug Fix</span>Small bug fix in Scripts Counter where the button name would get stuck when changing file type<br>
+                      Note:
+                    </div>
+
+                    <li class="collapsible">v 0.3.0 </li>
+                    <div class="cmdCollapse">Description: Third tool added, many bug fixes and suggestion implementation. date 06/10/24<br>
+
+                      <span class="codeBlock">🟩 Addition</span>Notes tool added, used for creating and saving quick notes while in the engine<br>
+                      <span class="codeBlock">🟩 Addition</span>Integrated Saving functionality to Notes<br>
+                      <span class="codeBlock">🟩 Addition</span>Added dropdown buttons to categories (you can now minimise settings, buttons etc)<br>
+                      <span class="codeBlock">🟩 Addition</span>Support for both .txt files and .json<br>
+                      
+                      <span class="codeBlock">🟧 Bug Fix</span>Major bug fix, the Post-Build Automation zipping would get stuck and not work with more than 1 bonus file<br>
+                      <span class="codeBlock">🟧 Bug Fix</span>Worked on Zip handling to avoid it's flakiness<br>
+
+                      <span class="codeBlock">🟦 Rework</span>Reworked All UI's, added reused UI functions to adhere to DRY principle (Don't Repeat Yourself)<br>
+                      Note:</div>
+
+                      <li class="collapsible">v 0.4.0 </li>
+                    <div class="cmdCollapse">Description: Logging and optimisation. date: 12/10/2024<br>
+
+                      <span class="codeBlock">🟩 Addition</span>Logging for bugs, using NLog.<br>
+                      <span class="codeBlock">🟩 Addition</span>Screenshot Tool<br>
+                    
+                      Note:</div>
+
+                      <li class="collapsible">v 0.5.0 </li>
+                    <div class="cmdCollapse">Description: Saving and Bug Fixes date: 20/10/2024<br>
+                      <span class="codeBlock">🟩 Addition</span>Save System for directories/folders, dropdowns and setings for all Tools<br>
+
+                      <span class="codeBlock">🟧 Bug Fix</span>Submit Feedback accessed the Bug file if previously attached, and would freak out if it was not used<br>
+
+                      <span class="codeBlock">🟦 Rework</span>Note Tool's "Auto Save" setting has now been made into automatic or none, this is much simpler (and better)<br>
+                    
+                      Note:</div>
+
+                      <li class="collapsible">v 0.6.0 </li>
+                      <div class="cmdCollapse">Description: addition of documentation and reporting. date: 31/10/2024<br>
+
+                        <span class="codeBlock">🟩 Addition</span>Documentation PDF File for easier understanding<br>
+                        <span class="codeBlock">🟩 Addition</span>Easier to understand "Help" Category<br>
+                        
+                       
+                        Note:</div>
+
+                        <li class="collapsible">v 0.7.0 </li>
+                      <div class="cmdCollapse">Description: Logging and optimisation. date: 03/11/2024<br>
+
+                        
+                        <span class="codeBlock">🟧 Bug Fix</span>"Newtonsoft" Dependency not being found/referenced<br>
+                        <span class="codeBlock">🟧 Bug Fix</span>Namespace Conflictions with any user-made "Editor" scripts.<br>
+                        <span class="codeBlock">🟧 Bug Fix</span>UI Bug in PostBuildActions that caused it to not render<br>
+                        <span class="codeBlock">🟧 Bug Fix</span>Added checks in PostBuildActions Functions to verify the existence of variables<br> 
+
+                        <span class="codeBlock">🟦 Rework</span>Saving "PlayerPrefs" more efficiently, ensuring each project has different variables, whereas before it wouldn't do this<br>
+
+                        Note: Thank you to my tester(s) for finding these bugs; they are very important to find early.</div>
+
+
+                        <li class="collapsible">v 0.8.0 </li>
+                      <div class="cmdCollapse">Description: Bug Fixing & Feedback Implementation. date: 11/11/2024<br>
+
+                        <span class="codeBlock">🟩 Addition</span>Custom Naming in Screenshot Tool<br>
+                        <span class="codeBlock">🟩 Addition</span>Build Settings in Post Build Actions<br>
+                        <span class="codeBlock">🟩 Addition</span>Clearer Settings for Post Build Actions<br>
+                        <span class="codeBlock">🟩 Addition</span>Tooltips for all Tools<br>
+                        <span class="codeBlock">🟧 Bug Fix</span>Fixed a bug where you could not build your own game when importing the tool<br> 
+
+                        Note: Thank you to my tester(s) for giving feedback that I am able to implement.</div>
+
+
+                    
+
+                    <div class="divider" style="width:24%; margin:30px 0;"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <script src="../index.js"></script>
+      <script src="./documentation.js"></script>
+</body>
+
+</html>
