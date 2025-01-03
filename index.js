@@ -14,14 +14,14 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 console.log("Loaded.")
 
-openMenu.addEventListener('click',show);
-closeMenu.addEventListener('click',close);
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
 
-function show(){
+function show() {
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
 }
-function close(){
+function close() {
     mainMenu.style.top = '-500%';
     mainMenu.style.display = 'flex';
 }
@@ -53,7 +53,7 @@ if (width < 900) {
     }
     title[4].onclick = function () {
         closeSidePanel()
-    }    
+    }
 }
 
 if (width < 900) {
@@ -71,25 +71,25 @@ if (width < 900) {
     }
     section[4].onclick = function () {
         closeSidePanel()
-    }    
+    }
     section[5].onclick = function () {
         closeSidePanel()
-    }    
+    }
     section[6].onclick = function () {
         closeSidePanel()
-    }    
+    }
     section[7].onclick = function () {
         closeSidePanel()
-    }    
+    }
     section[8].onclick = function () {
         closeSidePanel()
-    }    
+    }
     section[9].onclick = function () {
         closeSidePanel()
-    }    
+    }
     section[10].onclick = function () {
         closeSidePanel()
-    }    
+    }
 }
 
 if (width < 650) {
@@ -104,10 +104,10 @@ if (width < 650) {
 var myVar;
 
 function loaderFunction() {
-  myVar = setTimeout(showPage, 1400);
+    myVar = setTimeout(showPage, 1400);
 }
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("page").style.display = "block";
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("page").style.display = "block";
 }
