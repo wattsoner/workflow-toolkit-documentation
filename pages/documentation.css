@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -108,6 +107,7 @@ a {
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .row ul li::before {
@@ -313,12 +313,7 @@ ul {
     -moz-box-shadow: 0px 0px 8px 2px rgba(88, 101, 242, .5);
 }
 
-
-/* Break Points */
-
-
-/* Extra small-small devices (phones, 420px and down) */
-@media only screen and (max-width: 420px) {
+@media (max-width: 900px) {
     .navbar {
         height: auto;
     }
@@ -330,13 +325,6 @@ ul {
     .links {
         float: none;
     }
-
-}
-
-
-
-/* Extra small devices (phones, 650px and down) */
-@media (max-width: 900px) {
 
     nav {
         position: relative;
@@ -402,11 +390,6 @@ ul {
         display: block;
     }
 
-    /* .divider,
-    .left {
-        display: none;
-    } */
-
     .sidepanel a.title {
         background-color: #0F0F10;
     }
@@ -467,7 +450,6 @@ ul {
 }
 
 .severity-legend ul, .bugs-list ul {
-    list-style: none;
     padding-left: 0;
 }
 
@@ -495,5 +477,5 @@ ul {
 }
 
 .bugs-list ul li strong {
-    color: #FF6565; /* Change color for different severity if needed */
+    color: #FF6565;
 }

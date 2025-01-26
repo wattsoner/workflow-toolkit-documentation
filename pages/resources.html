@@ -13,45 +13,42 @@
       rel="stylesheet">
 </head>
 
-<body onload="loaderFunction()">
+<div id="loader">
+   <div class="loading">
+      <span></span>
+   </div>
+</div>
+<div id="page">
+   <nav>
+      <div class="logo noselect">
+         <img class="noselect" src="../logo.png"> Resources
+      </div>
 
-   <div id="loader">
-      <div class="loading">
-         <span></span>
+      <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu noselect">
+         <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+         <li><a href="documentation.html"><i class="fas fa-file-code"></i> Documentation</a></li>
+         <li><a class="active" href="#"><i class="fas fa-burn"></i> Resources</a></li>
+         <li><a href="../pages/purchase.html"><i class="fas fa-piggy-bank"></i> Purchase</a></li>
+         <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
+      </ul>
+   </nav>
+
+   <div class="content noselect">
+      <div class="heading text-center">
+         <img id="toolkitLogo" class="noselect" src="../logo.png" alt="toolkitLogo">
+         <h1 class="title">Important Resources</h1>
+         <p class="subtitle">download resources for the project; including Design Documents, Press Kit Stuffs, Assets &
+            More.</p>
+
+         <br>
+         <a class="btn btn-primary" href="../docs/Fact Sheets/Workflow Toolkit Fact Sheet v 0.1.pdf" download
+            role="button"><i class="fas fa-file-alt"></i> Download Fact Sheet</a>
+         <a class="btn btn-secondary" href="../docs/Workflow Toolkit Social Media Assets.zip" role="button"><i
+               class="fas fa-paint-brush"></i> Download Social Media Assets</a>
       </div>
    </div>
-   <div id="page">
-      <nav>
-         <div class="logo noselect">
-            <img class="noselect" src="../logo.png"> Resources
-         </div>
-
-         <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
-         <ul class="mainMenu noselect">
-            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="documentation.html"><i class="fas fa-file-code"></i> Documentation</a></li>
-            <li><a class="active" href="#"><i class="fas fa-burn"></i> Resources</a></li>
-            <li><a href="../pages/purchase.html"><i class="fas fa-piggy-bank"></i> Purchase </a></li>
-            <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
-         </ul>
-      </nav>
-
-      <div class="content noselect">
-         <div class="heading text-center">
-            <img id="botLogo" class="noselect" src="../logo.png" alt="botLogo">
-            <h1 class="title">Important Resources</h1>
-            <p class="subtitle">download resources for the project; including Design Documents, Assets & More.</p>
-
-            <br>
-            <a class="btn btn-primary" href="../docs/Workflow Toolkit Technical Design Document v1.0.pdf" download
-               role="button"><i class="fas fa-file-alt"></i> Download Technical Design Document</a>
-            <a class="btn btn-primary" href="../docs/Workflow Toolkit Design Document v1.0.pdf" download
-               role="button"><i class="fas fa-book"></i> Download Design Document</a>
-            <a class="btn btn-secondary" href="../docs/Workflow Toolkit Social Media Assets.zip" role="button"><i
-                  class="fas fa-paint-brush"></i> Download Social Media Assets</a>
-         </div>
-      </div>
-      <script src="../index.js"></script>
-</body>
+   <script src="../index.js"></script>
+   </body>
 
 </html>
