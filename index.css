@@ -404,6 +404,13 @@ a {
     background-color: #576f86;
 }
 
+@media (max-width: 600px) {
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
 
 @media (max-width: 335px) {
     .btn {
