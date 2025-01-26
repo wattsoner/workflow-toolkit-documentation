@@ -345,7 +345,7 @@ nav .mainMenu .closeMenu,
     width: 100%;
     padding: 0 30px;
     color: #fff;
-
+    animation: pageShow .3s ease-in-out;
 }
 
 .title {
@@ -404,13 +404,6 @@ a {
     background-color: #576f86;
 }
 
-@media (max-width: 600px) {
-    .btn {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-    }
-}
 
 @media (max-width: 335px) {
     .btn {
@@ -437,7 +430,6 @@ a {
     user-select: none;
 }
 
-
 @media (max-width: 420px) {
     .title {
         font-size: 30px;
@@ -451,6 +443,11 @@ a {
         font-size: 14px;
         margin: 2px;
         padding: 8px 13px;
+    }
+
+    .btn-secondary {
+        display: block;
+        margin-top: 10px;
     }
 
     .about-section {
@@ -502,6 +499,7 @@ a {
         height: auto;
         animation: bounce 1s infinite;
     }
+}
 
     @keyframes slideDown {
         from {
@@ -570,6 +568,3 @@ a {
         font-size: 18px;
         margin-bottom: 0;
     }
-
-
-}
