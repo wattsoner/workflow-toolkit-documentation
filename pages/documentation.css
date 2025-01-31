@@ -267,7 +267,7 @@ ul {
     transform: translateY(-50%);
     transition: transform 0.3s ease, content 0.3s ease;
     font-weight: bold;
-    color: #2ecc71;
+    color: #00aeff;
 }
 
 .collapsible.active::after {

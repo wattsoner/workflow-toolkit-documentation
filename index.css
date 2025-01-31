@@ -142,7 +142,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
-    /* Prevent wrapping */
     flex-wrap: nowrap;
     animation: pageShow .3s ease-in-out;
 }
