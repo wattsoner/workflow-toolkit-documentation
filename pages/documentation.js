@@ -1,19 +1,14 @@
-var coll = document.getElementsByClassName("collapsible");
-var i;
+document.querySelectorAll('.collapsible').forEach(button => {
+  button.addEventListener('click', () => {
+      button.classList.toggle('active');
+      const content = button.nextElementSibling;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
+      content.classList.toggle('expanded');
 
-      setTimeout(() => {
-        content.style.padding = "0px";
-      }, 180)
-    } else {
-      content.style.padding = "20px";
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
+      if (content.classList.contains('expanded')) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+          content.style.maxHeight = '0';
+      }
   });
-}
+});
