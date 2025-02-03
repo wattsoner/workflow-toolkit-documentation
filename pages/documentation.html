@@ -21,7 +21,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="documentation.css">
   <link rel="stylesheet" href="../index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
@@ -33,14 +33,12 @@
 
 <body>
 
-  <!-- Loader -->
   <div id="loader">
     <div class="loading">
       <span></span>
     </div>
   </div>
 
-  <!-- Main Page Container -->
   <div id="page">
     <nav>
       <div class="logo noselect">
@@ -60,7 +58,6 @@
     <div class="container clear noselect">
       <div class="row wrapper">
 
-        <!-- Mobile panel toggles -->
         <span class="collapse" onclick="closeSidePanel()">
           <i class="fas fa-caret-left"></i>
         </span>
@@ -68,7 +65,6 @@
           <i class="fas fa-caret-right"></i>
         </span>
 
-        <!-- Side Panel -->
         <div class="sidepanel">
           <div class="divider left"></div>
           <a class="title" href="#introduction">Introduction</a>
@@ -97,11 +93,9 @@
           <a class="section" href="#versions">versions</a>
           <div class="space double"></div>
         </div>
-        <!-- END sidepanel -->
 
         <div class="right-col">
 
-          <!-- INTRODUCTION SECTION -->
           <div class="doc-section-block">
             <h1 id="introduction">Introduction</h1>
             <p id="aboutthetoolkit">
@@ -121,7 +115,6 @@
             </p>
           </div>
 
-          <!-- GETTING STARTED SECTION -->
           <div class="doc-section-block">
             <h1 id="gettingstarted">Getting Started</h1>
             <p id="inenginehelp">
@@ -171,7 +164,6 @@
             </ul>
           </div>
 
-          <!-- TOOLS SECTION -->
           <div class="doc-section-block">
             <h1 id="commands">Tools</h1>
             <div>Syntax:</div>
@@ -190,7 +182,6 @@
                 <strong>Be cautious!</strong>
               </div>
 
-              <!-- AUTOMATION TOOLS -->
               <h2 id="automation">Automation Tools</h2>
               <ul>
                 <li class="collapsible">Post Build Actions</li>
@@ -233,7 +224,6 @@
                 </div>
               </ul>
 
-              <!-- OPTIMISATION TOOLS -->
               <h2 id="optimisation">Optimisation Tools</h2>
               <ul>
                 <li class="collapsible">N/A</li>
@@ -245,7 +235,6 @@
                 </div>
               </ul>
 
-              <!-- MISC TOOLS -->
               <h2 id="miscellaneous">Miscellaneous Tools</h2>
               <ul>
                 <li class="collapsible">Notes</li>
@@ -286,7 +275,6 @@
             </ul>
           </div>
 
-          <!-- BUGS SECTION -->
           <div class="doc-section-block bug-section">
             <h1 id="bugs">Known Bugs</h1>
             <div class="severity-legend">
@@ -330,9 +318,7 @@
             </div>
           </div>
 
-          <!-- RELEASE NOTES SECTION -->
           <div class="doc-section-block release-notes-section">
-            <!-- Key/Legend -->
             <div class="fourboxkey-colours">
               <h2 id="fourboxkey">Key</h2>
               <ul>
@@ -343,7 +329,6 @@
               </ul>
             </div>
 
-            <!-- Patch Notes -->
             <div class="patch-notes" id="versions">
               <div class="patch-item">
                 <h2 class="patch-version">
@@ -606,12 +591,10 @@
               </div>
             </div>
           </div>
-          <!-- END RELEASE NOTES SECTION -->
-
-        </div> <!-- end right-col -->
-      </div> <!-- end row wrapper -->
-    </div> <!-- end container -->
-  </div> <!-- end page -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="../index.js"></script>

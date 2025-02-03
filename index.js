@@ -15,8 +15,9 @@ const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 let loaderTimeout;
 
 function loaderFunction() {
-    if (loaderTimeout) return;
+    document.body.classList.add('hide-footer');
 
+    if (loaderTimeout) return;
     loaderTimeout = setTimeout(showPage, 1400);
 }
 
@@ -28,6 +29,10 @@ function showPage() {
     if (page) page.style.display = "block";
 
     console.log("Page loaded successfully.");
+
+    if (!document.body.classList.contains('nav-open')) {
+        document.body.classList.remove('hide-footer');
+    }
 }
 
 openMenu.addEventListener('click', showMenu);
@@ -36,11 +41,14 @@ closeMenu.addEventListener('click', closeMenuHandler);
 function showMenu() {
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
+
+    document.body.classList.add('nav-open', 'hide-footer');
 }
 
 function closeMenuHandler() {
     mainMenu.style.top = '-500%';
-    mainMenu.style.display = 'flex';
+    document.body.classList.remove('nav-open');
+    document.body.classList.remove('hide-footer');
 }
 
 function openSidePanel() {
