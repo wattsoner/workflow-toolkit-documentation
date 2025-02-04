@@ -513,7 +513,7 @@ footer {
     right: 0;
     background-color: #0f0f10;
     color: #fff;
-    padding: 18px 50px;
+    padding: 15px 50px;
     text-align: center;
     z-index: 1000;
 }
@@ -563,11 +563,14 @@ footer {
 
 @media (max-width: 600px) {
     footer {
-      padding: 20px 20px;
+      padding: 12px 50px;
     }
-    .footer-socials a .base-icon,
-    .footer-socials a .fill-icon {
-      font-size: 20px;
+    .footer-studio span {
+        font-size: 12px;
+    }
+    .footer-socials a {
+        font-size: 18px;
+        margin: 0 8px;
     }
 }
 
