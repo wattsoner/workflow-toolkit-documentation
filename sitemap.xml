@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.workflowtoolkit.wattie.work</loc>
+		<priority>1.00</priority>
+		<lastmod>2025-02-03</lastmod>
+	</url>
+	<url>
+		<loc>https://www.workflowtoolkit.wattie.work/pages/resources.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-02-03</lastmod>
+	</url>
+	<url>
+		<loc>https://www.workflowtoolkit.wattie.work/pages/purchase.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-02-03</lastmod>
+	</url>
+	<url>
+		<loc>https:/www.workflowtoolkit.wattie.work/pages/documentation.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-02-03</lastmod>
+	</url>
+</urlset>

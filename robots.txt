@@ -1,0 +1,22 @@
+# robots.txt for www.workflowtoolkit.wattie.work
+
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+Sitemap: http://www.workflowtoolkit.wattie.work/sitemap.xml
+
+# Chomp says hi!
+#
+#   \.          |\
+#      \`.___---~~  ~~~--_
+#      //~~----___  (_o_-~
+#     '           |/'
+#
+#
+# Have a good day! ~ Chomp Games.
