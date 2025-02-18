@@ -1,4 +1,4 @@
-# robots.txt for www.workflowtoolkit.wattie.work
+# robots.txt for www.workflowtoolkit.chompgames.co.uk
 
 User-agent: *
 Disallow: /
@@ -9,7 +9,7 @@ Allow: /
 User-agent: ia_archiver
 Allow: /
 
-Sitemap: http://www.workflowtoolkit.wattie.work/sitemap.xml
+Sitemap: http://www.workflowtoolkit.chompgames.co.uk/sitemap.xml
 
 # Chomp says hi!
 #
