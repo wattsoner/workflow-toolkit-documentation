@@ -591,3 +591,87 @@ footer {
 body.hide-footer footer {
     display: none;
   }
+
+/* Language Tracker Styles */
+.doc-section-block.language-tracker {
+    padding: 20px;
+    background-color: rgba(21, 22, 24, 0.7);
+    border: 1px solid #2a2d30;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+  
+  .language-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .language-list li {
+    margin-bottom: 20px;
+  }
+  
+  /* Make language name and button align on the same baseline */
+  .language-name {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0; /* remove bottom margin to help alignment */
+    vertical-align: middle;
+  }
+  
+  /* Circular Download Button - adjusted for inline alignment and white icon */
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #2a2d30;
+    color: #fff !important; /* force white icon */
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: background-color 0.2s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #576f86;
+  }
+  
+  /* Progress Bar Styles */
+  .progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 25px;
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%; /* updated via JS */
+    background-color: #2ecc71;
+    transition: width 0.3s ease;
+    z-index: 1;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  
