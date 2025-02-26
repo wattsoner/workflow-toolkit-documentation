@@ -592,7 +592,6 @@ body.hide-footer footer {
     display: none;
   }
 
-/* Language Tracker Styles */
 .doc-section-block.language-tracker {
     padding: 20px;
     background-color: rgba(21, 22, 24, 0.7);
@@ -610,15 +609,13 @@ body.hide-footer footer {
     margin-bottom: 20px;
   }
   
-  /* Make language name and button align on the same baseline */
   .language-name {
     display: inline-block;
     font-size: 16px;
-    margin: 0; /* remove bottom margin to help alignment */
+    margin: 0;
     vertical-align: middle;
   }
   
-  /* Circular Download Button - adjusted for inline alignment and white icon */
   .download-btn {
     display: inline-flex;
     align-items: center;
@@ -626,7 +623,7 @@ body.hide-footer footer {
     width: 24px;
     height: 24px;
     background-color: #2a2d30;
-    color: #fff !important; /* force white icon */
+    color: #fff !important;
     border-radius: 50%;
     text-align: center;
     font-size: 14px;
@@ -640,7 +637,7 @@ body.hide-footer footer {
     background-color: #576f86;
   }
   
-  /* Progress Bar Styles */
+
   .progress-container {
     width: 100%;
     background-color: #ddd;
@@ -656,7 +653,7 @@ body.hide-footer footer {
     top: 0;
     left: 0;
     height: 100%;
-    width: 0%; /* updated via JS */
+    width: 0%;
     background-color: #2ecc71;
     transition: width 0.3s ease;
     z-index: 1;
