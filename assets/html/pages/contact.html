@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
-  <title>Workflow Toolkit • Purchase</title>
+  <title>Workflow Toolkit • Contact</title>
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <meta property="og:title" content="Workflow Toolkit" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://workflowtoolkit.chompgames.co.uk />
+  <meta property="og:url" content="https://workflowtoolkit.chompgames.co.uk" />
   <meta property="og:image" content="https://workflowtoolkit.chompgames.co.uk/assets/resources/images/embed.png" />
-  <meta property="og:description"
-    content="Workflow Toolkit, A Game Development Plugin by Chomp Games. Copyright © All Rights Reserved. " />
+  <meta property="og:description" content="Workflow Toolkit, A Game Development Plugin by Chomp Games. Copyright © All Rights Reserved." />
   <meta property="og:locale" content="en_GB" />
-
 
   <link rel="icon" type="image/png" href="../../resources/images/icons/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../../resources/images/icons/favicon/favicon.svg" />
@@ -24,12 +21,52 @@
   <meta name="apple-mobile-web-app-title" content="Workflow Toolkit" />
   <link rel="manifest" href="../../resources/images/icons/favicon/site.webmanifest" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet">
-
-    <script defer data-domain="workflowtoolkit.chompgames.co.uk" src="https://plausible.io/js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script defer data-domain="workflowtoolkit.chompgames.co.uk" src="https://plausible.io/js/script.js"></script>
+  
+  <style>
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 4px;
+      background: #f3f3f3;
+      font-size: 16px;
+    }
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      background: #e9e9e9;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background: #454a4f;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background: #1d1e21;
+    }
+    .content {
+      padding-bottom: 80px;
+    }
+  </style>
 </head>
-
+<body>
 <div id="loader">
   <div class="loading">
     <span></span>
@@ -39,34 +76,30 @@
   <nav>
     <div class="logo noselect">
       <img class="noselect" src="../../resources/images/logos/workflow-toolkit-logo.png" alt="Logo">
-      <span class="logo-text">Purchase</span>
+      <span class="logo-text">Contact</span>
     </div>
-
     <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
     <ul class="mainMenu noselect">
       <li><a href="../../../index.html"><i class="fas fa-home"></i> Home </a></li>
       <li><a href="documentation.html"><i class="fas fa-file-code"></i> Documentation </a></li>
-      <li><a class="resources.html" href="#"><i class="fas fa-burn"></i> Resources </a></li>
-      <li><a class="active" href="#"><i class="fas fa-piggy-bank"></i> Purchase </a></li>
-      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact </a></li>
+      <li><a href="resources.html"><i class="fas fa-burn"></i> Resources </a></li>
+      <li><a href="purchase.html"><i class="fas fa-piggy-bank"></i> Purchase</a></li>
+      <li><a href="#" class="active"><i class="fas fa-envelope"></i> Contact </a></li>
       <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
     </ul>
   </nav>
 
   <div class="content noselect">
     <div class="heading text-center">
-      <img id="toolkitLogo" class="noselect" src="../../resources/images/logos/workflow-toolkit-logo.png"
-        alt="toolkitLogo">
-      <h1 class="title">Purchase</h1>
-      <p class="subtitle">Now avaliable on Unity and Itch.io!</p>
-
+      <img id="toolkitLogo" class="noselect" src="../../resources/images/logos/workflow-toolkit-logo.png" alt="toolkitLogo">
+      <h1 class="title">Contact</h1>
+      <p class="subtitle">Get in touch with us!</p>
       <br>
-      <a class="btn btn-primary" href="https://unity.com/" target="_blank" role="button">
-        <i class="fa-brands fa-unity"></i> Purchase on Unity.com
-      </a>
-      <a class="btn btn-secondary" href="https://wattieee.itch.io/workflow-toolkit" target="_blank" role="button">
-        <i class="fa-brands fa-itch-io"></i> Purchase on Itch.io
-      </a>
+      <form method="post" action="mailto:your-email@example.com" enctype="text/plain">
+        <input type="email" name="email" placeholder="Your email address" required>
+        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
     </div>
   </div>
 
@@ -92,8 +125,6 @@
     </div>
   </footer>
   <script src="../../js/index.js"></script>
-  </body>
-
-</html>
 </div>
-</iframe>
+</body>
+</html>
