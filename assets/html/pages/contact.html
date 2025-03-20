@@ -55,10 +55,16 @@
       <h1 class="title">Contact</h1>
       <p class="subtitle">Get in touch with us!</p>
       <br>
-      <form method="post" action="mailto:your-email@example.com" enctype="text/plain">
-        <input type="email" name="email" placeholder="Your email address" required>
-        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
-        <input type="submit" value="Submit">
+      <form action="https://formspree.io/f/xqapevba" method="POST">
+        <label>
+          Your email:
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Your message:
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send</button>
       </form>
     </div>
   </div>
